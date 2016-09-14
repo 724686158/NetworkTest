@@ -114,8 +114,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void parseJSONWithGSON(String response) {
         Gson gson = new Gson();
-        List<App> appList = gson.fromJson(response, new TypeToken<List<App>>() {}.getType());
-        for (App app : appList)
+        List<App2> appList = gson.fromJson(response, new TypeToken<List<App2>>() {}.getType());
+        for (App2 app : appList)
         {
             Log.d("MainActivity", "id is " + app.getId());
             Log.d("MainActivity", "name is " + app.getName());
